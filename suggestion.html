@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+            body{
+               background-size:cover;
+                background-image: url('9.jpg');
+                position:relative;
+                left:0%;
+                top:50px;
+                
+            }
+           h1{
+            text-shadow:2px 2px 2px yellow;
+            color:black;
+            text-transform:uppercase;
+            font-weight:bolder;
+            font-size:25px;
+            position:relative;
+            top:0%;
+           }
+            /* Style the form container */
+            .form-container {
+              width: 500px;
+              height:520px;
+              padding: 20px;
+            
+              margin: auto;
+            }
+          
+            /* Style the form fields */
+            .form-field {
+              width: 100%;
+              padding: 15px;
+              border: 1px solid black;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+          
+            /* Style the submit button */
+            .form-button {
+                font-weight:bolder;
+                text-transform:uppercase;
+              background-color: #0a0add;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 50px;
+              cursor: pointer;
+            }
+          
+            /* Style the label for the form fields */
+            .form-label {
+              font-size: 20px;
+              text-transform: uppercase;
+              font-weight:bolder;
+              margin-bottom: 6px;
+              color:rgb(7, 0, 0);
+            }
+          </style>
+          <center>
+          <h1>Give Suggestions</h1></center>
+          
+          <!-- Create the form container -->
+          <div class="form-container">
+            <!-- Create the form -->
+            <form method="post" action="/submit-suggestion">
+              <!-- Create a label and form field for the user's name -->
+              <label class="form-label" for="name">Name:</label><br>
+              <input class="form-field" type="text" id="name" name="name"><br>
+              <label class="form-label" for="email">Email:</label><br>
+    <input class="form-field" type="email" id="email" name="email"><br>
+
+    <!-- Create a label and form field for the suggestion -->
+    <label class="form-label" for="suggestion">Suggestion:</label><br>
+    <textarea class="form-field" id="suggestion" name="suggestion" rows="5" cols="50"></textarea><br>
+
+    <!-- Create the submit button -->
+    <button class="form-button" type="submit">Submit</button>
+  </form>
+</div>

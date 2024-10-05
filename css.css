@@ -1,0 +1,291 @@
+@media (max-width: 768px) {
+  /* Adjust your styles for smaller screens */
+}
+*{
+    margin:0px; 
+    padding:0;
+     box-sizing:content-box;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+header{
+    width:100vw;
+    
+   
+}
+nav{
+    width:100%; height:5vh;
+     color:white;
+     display :flex;
+    
+     justify-content:space-between;
+     align-items:center; 
+     text-transform:uppercase;
+}
+nav .logo{
+    width:25%; text-align:center;
+    color:white;
+    position:relative;
+    left:180px;
+    top:0px;
+   text-shadow: 1.5px 1px 1px blue;
+}
+nav .menu{
+    width:40%; 
+    display:flex;
+    justify-content:space-around;
+    
+}
+nav .menu a{
+    width:25%;
+    text-decoration:none; color:white;
+    font-weight:bold;
+   
+}
+.menu a{
+    color:aqua;
+}
+
+
+
+   
+   
+ .change_quotes:after
+ {  
+    
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-size:cover;
+    font-weight:bolder;
+    word-spacing:8px;
+    border-spacing: 8px;
+    text-transform:uppercase;
+    font-size:30px;
+    height:30px;
+    font-display:initial;
+    position:absolute;
+    top: 50%;
+    text-shadow: 3px 3px 3px green;
+    left:50%;
+    transform:translate(-50%, -50%);
+    animation:change 20s infinite ;
+    content:"";
+}
+ 
+
+@keyframes change {
+    0%{
+        content:"Don't grieve for me, for now I am free; I'm following the path God laid for me.";
+    }
+    25%{
+        content:"I won't be far away, for life goes on. Just listen with your heart and you'll hear my love all around you.";
+    }
+    50%{
+        content:"Life is eternal and love is immortal,and death is only a horizon.And a horizon is nothing save the limits of our sights";
+    }
+    75%{
+        content:"The life of one we love is never lost. Its influence goes on through all the lives it ever touched.- Christopher Holloway";
+    }
+    100%{
+        content:"He had the heart that cared completely. He had the smile that brought so much pleasure. He had the love that brought joy beyond measure.";
+    }
+   
+}
+.animate__heartBeat{
+
+    animation:tribute infinite;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+    color: #ffffff;
+    animation: fadeInOut 2s linear infinite;
+}
+h1{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h2{
+    position:absolute;
+    top:80%;
+    left:47%;
+    transform:translate(-50%, -50%);
+    font-size:33px;
+    color:white;
+    text-shadow:4px 5px 4px black;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: initial;
+    text-transform:uppercase ;
+}
+.change_content:after{
+    content:"";
+    text-shadow: 4px 3px 5px red;
+    animation:text 20s infinite linear;
+    color:rgb(215, 247, 4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    -webkit-text-stroke-color: black;
+}
+@keyframes text{
+    0%{
+        content:"Bhagat Singh";
+    }
+    25%{
+        content:"Lal bahadur shastri";
+    }
+    50%{
+        content:"ChanderShekhar Azad";
+    }
+    75%{
+        content:"Bal Gangadhar Tilak";
+    }
+    100%{
+        content:"Rani Laxmi Bai";
+    }
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+body{
+  background: #f5f6fa;
+  background-size:cover;
+}
+
+.wrapper .sidebar{
+  background:linear-gradient(rgba(0, 0, 0, 0.005),rgba(0,0,0,0.4));
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 155px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+  display: block;
+  width: 100px;
+  height: 100px;
+    border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ffffff;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  font-weight:bolder;
+  position: relative;
+  text-decoration: none;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: white;
+  width: 30px;
+  display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  color: white;
+
+  
+   
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+  color: white;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+  display: block;
+}
+
+.section{
+  width: calc(100% - 225px);
+  margin-left: 150px;
+  transition: all 0.5s ease;
+}
+
+ .section {
+  
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding:  8px;
+ 
+}
+
+ .section  .hamburger a{
+  font-size: 28px;
+  color: #f4fbff;
+}
+
+.wrapper .section .hamburger a:hover{
+  color: #a2ecff;
+}
+
+ .wrapper .section .container{
+  margin: 30px;
+  background: #fff;
+  padding: 50px;
+  line-height: 28px;
+}
+
+body.active .wrapper .sidebar{
+  left: -225px;
+}
+
+body.active .wrapper .section{
+  margin-left: 0;
+  width: 100%;
+}
+  h3{
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .icon-base {
+    position:relative;
+    left:42%;
+    bottom:-80%;
+    
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 32px;
+  }
+  .q{
+    color:rgb(255, 0, 102);
+
+  }
+  .e{
+    color:rgb(21, 21, 227);
+  }
+  .w{
+    color:rgb(12, 209, 12);
+  }
